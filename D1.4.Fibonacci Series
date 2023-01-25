@@ -2,7 +2,7 @@
 int main()
 {
 	int i,n0=0,n1=1,n2,n;
-	printf("Enter the number  of series:");
+	printf("Enter the number  of terms:");
 	scanf("%d",&n);
 	printf("The fibinnocci series:");
 	for(i=0;i<n;i++)
