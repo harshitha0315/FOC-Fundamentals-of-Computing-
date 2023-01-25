@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+  
+    int d_Num;
+    int i = 1, j, temp;
+    char h_Num[100];
+    printf("Enter the decimal number:");
+    scanf("%d",&d_Num);
+    while (d_Num != 0) {
+        temp = d_Num % 16;
+        if (temp < 10)
+            temp = temp + 48;
+        else
+            temp = temp + 55;
+        h_Num[i++] = temp;
+        d_Num = d_Num / 16;
+    }
+    printf("Hexadecimal value is: ");
+    for (j = i - 1; j > 0; j--)
+        printf("%c", h_Num[j]);
+  
+    return 0;
+}
